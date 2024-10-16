@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bé tập tính</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="flex justify-center items-center h-screen bg-gray-100">
+    <div class="bg-white p-6 rounded shadow-md w-full max-w-lg">
+        <h2 class="text-2xl font-bold mb-4 ">Bé tập tính</h2>
+    
+        <!-- First row -->
+        <div class="flex items-center mb-4">
+            <label class="w-24">Số thứ nhất</label>
+            <input type="text" id="firstNumber" class="border p-2 w-52 mr-4">
+            <input type="radio" name="operation" id="add" value="add" class="mr-1">
+            <label for="add" class="mr-4">Cộng</label>
+            <input type="radio" name="operation" id="subtract" value="subtract" class="mr-1">
+            <label for="subtract">Trừ</label>
+        </div>
+    
+        <!-- Second row -->
+        <div class="flex items-center mb-4">
+            <label class="w-24">Số thứ hai</label>
+            <input type="text" id="secondNumber" class="border p-2 w-52 mr-4">
+            <input type="radio" name="operation" id="multiply" value="multiply" class="mr-1">
+            <label for="multiply" class="mr-4">Nhân</label>
+            <input type="radio" name="operation" id="divide" value="divide" class="mr-1">
+            <label for="divide">Chia</label>
+        </div>
+    
+        <!-- Third row -->
+        <div class="flex items-center mb-4">
+            <label class="w-24">Kết quả</label>
+            <input type="text" id="result" class="border p-2 w-52 mr-4" readonly>
+            <button id="calculate" class="bg-gray-200 p-2 rounded">Tính</button>
+        </div>
+    
+        <!-- Fourth row -->
+        <div class="flex items-center">
+            <label class="w-24">Thông báo</label>
+            <span id="notification" class="text-red-500 flex-1"></span>
+        </div>
+    </div>
+</body>
+</html>
